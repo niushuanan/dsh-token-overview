@@ -158,6 +158,21 @@ function monthlyTrend(contributions) {
   return [...months.values()]
 }
 
+/** Parse scanner NDJSON into session records, dropping torn lines individually. */
+export function ndjsonSessions(output) {
+  const sessions = []
+  for (const line of String(output).split('\n')) {
+    if (line.trim().length === 0) continue
+    try {
+      const record = JSON.parse(line)
+      if (record?.kind === 'session') sessions.push(record)
+    } catch {
+      continue
+    }
+  }
+  return sessions
+}
+
 export function threeHourTrend(hourly) {
   const entries = Array.isArray(hourly?.entries) ? hourly.entries : []
   const date = typeof hourly?.date === 'string' ? hourly.date : localDateKey(Date.now())
@@ -337,16 +352,6 @@ export function mergeHourlyToday(rawHourly, sessions, runtime) {
   }
 }
 
-function ndjsonSessions(output) {
-  const sessions = []
-  for (const line of String(output).split('\n')) {
-    if (line.trim().length === 0) continue
-    const record = JSON.parse(line)
-    if (record?.kind === 'session') sessions.push(record)
-  }
-  return sessions
-}
-
 async function writeHourlyArtifact(directory, reportScript, runCommand) {
   const runtime = await readJson(join(directory, 'runtime.json'))
   const command = runtime?.runtime?.command
@@ -359,7 +364,7 @@ async function writeHourlyArtifact(directory, reportScript, runCommand) {
   if (runtime?.dsh?.enabled && typeof runtime?.dsh?.sessionsRoot === 'string') {
     try {
       const helper = join(dirname(reportScript), 'dsh_session_scan.mjs')
-      const scan = await runCommand(process.execPath, [helper, '--root', runtime.dsh.sessionsRoot])
+      const scan = await runCommand(process.execPath, [helper, '--root', runtime.dsh.sessionsRoot], { captureLimit: Number.POSITIVE_INFINITY })
       sessions = ndjsonSessions(scan.stdout)
     } catch {
       sessions = []
@@ -465,9 +470,10 @@ async function writeMarker(root, slot, generatedAt) {
   await rename(temporary, join(root, 'active.json'))
 }
 
-function appendOutput(current, chunk) {
+function appendOutput(current, chunk, captureLimit = OUTPUT_LIMIT) {
   const next = current + chunk.toString('utf8')
-  return next.length > OUTPUT_LIMIT ? next.slice(-OUTPUT_LIMIT) : next
+  if (captureLimit === Number.POSITIVE_INFINITY) return next
+  return next.length > captureLimit ? next.slice(-captureLimit) : next
 }
 
 function collectorEnvironment() {
@@ -514,7 +520,8 @@ export function createCollector(config = {}) {
     timer = setTimeout(() => { void refresh() }, safeDelay)
   }
 
-  const runCommand = (program, args) => new Promise((resolve, reject) => {
+  const runCommand = (program, args, options = {}) => new Promise((resolve, reject) => {
+    const captureLimit = options.captureLimit ?? OUTPUT_LIMIT
     let stdout = ''
     let stderr = ''
     let settled = false
@@ -525,7 +532,7 @@ export function createCollector(config = {}) {
       callback()
     }
     child = spawn(program, args, { env: collectorEnvironment(), stdio: ['ignore', 'pipe', 'pipe'] })
-    child.stdout.on('data', (chunk) => { stdout = appendOutput(stdout, chunk) })
+    child.stdout.on('data', (chunk) => { stdout = appendOutput(stdout, chunk, captureLimit) })
     child.stderr.on('data', (chunk) => { stderr = appendOutput(stderr, chunk) })
     child.once('error', (error) => { finish(() => reject(error)) })
     child.once('exit', (exitCode, signal) => {
