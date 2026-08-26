@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "kind": "xiaozhuang-dsh-plugin-export",
+  "createdAt": "2026-08-26T11:46:44.432Z",
+  "sourceCommit": "49b1c5207b1556515752c6bf9e7902c1a5964ad9",
+  "plugins": [
+    {
+      "id": "token-overview",
+      "name": "Token 总览",
+      "rows": [
+        {
+          "id": "token-overview",
+          "name": "@deepseek-ai/dsh-token-overview"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "profile",
+          "path": "token-overview"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "payload/token-overview/profile/token-overview/assets/token-overview-icon.png",
+      "size": 8253,
+      "sha256": "cf82d305a7b3c8a66d3f49a0fdf7d84251e59af11c78e1d29ef4ab81df1f9a78"
+    },
+    {
+      "path": "payload/token-overview/profile/token-overview/lib/client.js",
+      "size": 26916,
+      "sha256": "731f0189b4cc924d9f3844573d35685e6ddc5d2ae0ece386fb07ca3fde096983"
+    },
+    {
+      "path": "payload/token-overview/profile/token-overview/lib/index.js",
+      "size": 24429,
+      "sha256": "7aa5586d49bdcb837ddf93db44cba1d0ec85db16c5b455b41f35a5cb595a898e"
+    },
+    {
+      "path": "payload/token-overview/profile/token-overview/package.json",
+      "size": 476,
+      "sha256": "891ea3d15a173b366b40749973385829c56f9331eeb518a9cf89b158a11cbfb2"
+    },
+    {
+      "path": "support/tokscale-token-report/SKILL.md",
+      "size": 453,
+      "sha256": "5a252b9619c7977c1ae9aa1e1031edcd76868ec2a075a6abd504369f93d647de"
+    },
+    {
+      "path": "support/tokscale-token-report/assets/chart.umd.min.js",
+      "size": 205399,
+      "sha256": "d2af8974e95271638772e9e9524db5b9a6f58d6ec2d5d781400447b4a31c681e"
+    },
+    {
+      "path": "support/tokscale-token-report/assets/report.template.html",
+      "size": 48216,
+      "sha256": "4c2720de64abf53899c24420c97dc7d3214f0f577344941487d609d8462a8106"
+    },
+    {
+      "path": "support/tokscale-token-report/scripts/dsh_session_scan.mjs",
+      "size": 9776,
+      "sha256": "0da76ed518a10285280005c197662b8ec59b8dd1f7b1ceec8fc6aa3cf15754eb"
+    },
+    {
+      "path": "support/tokscale-token-report/scripts/tokscale_token_report.py",
+      "size": 80574,
+      "sha256": "cb06edbc38675bc5ee274feb705eecc4842bcf7ed0ac18039b53bad9e2205d2a"
+    }
+  ],
+  "excludes": [
+    "node_modules",
+    "Git metadata",
+    "tests",
+    "caches",
+    "credentials",
+    "sessions",
+    "conversation history",
+    "user settings"
+  ],
+  "repository": "https://github.com/niushuanan/dsh-token-overview",
+  "releaseTag": "xiaozhuang-v0.4.2",
+  "sourceRepository": "https://github.com/niushuanan/xiaozhuang-dsh"
+}
