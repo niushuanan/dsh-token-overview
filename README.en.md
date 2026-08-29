@@ -6,6 +6,8 @@ English | [中文](README.md)
 
 See tokens, cache usage, calls, active periods, and estimated cost across AI clients on the whole computer.
 
+The Token Overview Settings page reuses the product's shared title hierarchy. Older DSH builds without that primitive receive a size-matched built-in fallback.
+
 <p align="center"><img src="docs/16-token-overview.webp" alt="Cross-client token metrics and time-of-day trend" width="800"></p>
 
 ## Install
@@ -28,4 +30,4 @@ See tokens, cache usage, calls, active periods, and estimated cost across AI cli
 
 ## Source and license
 
-This repository is a one-way distribution mirror of [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh), not an independent development source. It is synchronized from main-repository commit [`49b1c5207b`](https://github.com/niushuanan/xiaozhuang-dsh/commit/49b1c5207b1556515752c6bf9e7902c1a5964ad9) and released as [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2). Licensed under the [MIT License](LICENSE).
+This repository is a one-way distribution mirror of [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh), not an independent development source. It is synchronized from main-repository commit [`e4845a8168`](https://github.com/niushuanan/xiaozhuang-dsh/commit/e4845a81688efec24ecff6d9c61dfbe1b8194776); the latest tagged release remains [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2). Licensed under the [MIT License](LICENSE).

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "kind": "xiaozhuang-dsh-plugin-export",
-  "createdAt": "2026-08-26T21:03:35.893Z",
-  "sourceCommit": "3ab1999ebeef4297bd69afd05a35aae29d5ff71b",
+  "createdAt": "2026-08-29T08:18:00.000Z",
+  "sourceCommit": "e4845a81688efec24ecff6d9c61dfbe1b8194776",
   "plugins": [
     {
       "id": "token-overview",
@@ -29,8 +29,8 @@
     },
     {
       "path": "payload/token-overview/profile/token-overview/lib/client.js",
-      "size": 26916,
-      "sha256": "731f0189b4cc924d9f3844573d35685e6ddc5d2ae0ece386fb07ca3fde096983"
+      "size": 26812,
+      "sha256": "6bd3351bbee7e914f7b79a02112c6e82e76028833cf0889eaf848ee1429d94c1"
     },
     {
       "path": "payload/token-overview/profile/token-overview/lib/index.js",

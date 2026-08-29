@@ -3,7 +3,12 @@ window.__ModuleLoader__.load({
   id: '@deepseek-ai/dsh-token-overview',
   factory: (require) => {
     const React = require('react')
-    const { IconRightUpOutline14 } = require('@deepseek-ai/dsh-client-ui-primitives')
+    const { IconRightUpOutline14, SettingsSectionHeader: SharedSettingsSectionHeader } = require('@deepseek-ai/dsh-client-ui-primitives')
+    const SettingsSectionHeader = SharedSettingsSectionHeader ?? function SettingsSectionHeaderFallback(props) {
+      return React.createElement('header', { 'data-settings-section-header': 'true', style: { display: 'grid', gap: '4px', margin: '0 0 24px' } },
+        React.createElement('h2', { style: { margin: 0, fontSize: '20px', lineHeight: '28px', fontWeight: 600 } }, props.title),
+        props.description ? React.createElement('p', { style: { margin: 0, color: 'var(--dsw-alias-label-secondary)', fontSize: '13px', lineHeight: '20px' } }, props.description) : null)
+    }
 
     const API_URL = '/plugins/token-overview/api/status'
     const POLL_MS = 30_000
@@ -15,13 +20,8 @@ window.__ModuleLoader__.load({
     ]
 
     const CSS = [
-      '.to-root { box-sizing:border-box; container-type:inline-size; width:100%; max-width:760px; padding:0 4px 36px; color:var(--dsw-alias-label-primary); }',
+      '.to-root { box-sizing:border-box; container-type:inline-size; width:100%; max-width:760px; padding:0 0 36px; color:var(--dsw-alias-label-primary); }',
       '.to-root * { box-sizing:border-box; }',
-      '.to-head { padding:4px 0 18px; }',
-      '.to-head-main { flex:1; min-width:0; }',
-      '.to-title-row { display:flex; align-items:center; flex-wrap:wrap; gap:8px; min-width:0; }',
-      '.to-title { margin:0; font-size:21px; line-height:28px; font-weight:680; letter-spacing:-.028em; }',
-      '.to-copy { margin:4px 0 0; overflow:hidden; color:var(--dsw-alias-label-secondary); font-size:11px; line-height:17px; text-overflow:ellipsis; white-space:nowrap; }',
       '.to-freshness { margin-top:2px; color:var(--dsw-alias-label-tertiary); font-size:10px; line-height:16px; }',
       '.to-ranges { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:3px; width:min(100%,372px); margin:4px 0 19px; padding:3px; border-radius:12px; background:color-mix(in srgb,var(--dsw-alias-label-primary) 6%,transparent); }',
       '.to-range { height:30px; padding:0 11px; border:0; border-radius:9px; background:transparent; color:var(--dsw-alias-label-secondary); font:inherit; font-size:11px; cursor:pointer; transition:background-color .12s ease,color .12s ease; }',
@@ -94,7 +94,7 @@ window.__ModuleLoader__.load({
       '.to-empty,.to-error { margin-top:12px; padding:38px 20px; border-radius:14px; background:var(--dsw-alias-bg-layer-2); color:var(--dsw-alias-label-secondary); font-size:11px; line-height:18px; text-align:center; }',
       '.to-error { color:var(--dsw-alias-red-primary,#b42318); }',
       '@container (max-width:520px) { .to-kpis { grid-template-columns:repeat(2,minmax(0,1fr)); } .to-breakdown { grid-template-columns:repeat(3,minmax(0,1fr)); } .to-trend-tooltip { grid-template-columns:repeat(2,minmax(0,1fr)); } .to-tooltip-cell:first-child { grid-column:1/-1; } .to-row { grid-template-columns:1fr; gap:6px; padding:10px 0; } .to-row-stats { grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px; } .to-row-stat { text-align:left; } .to-coverage { grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px 0; } .to-coverage-item:nth-child(3) { padding-left:0; border-left:0; } .to-coverage-item:nth-child(2) { padding-right:0; } .to-coverage-item:nth-child(n+3) { padding-top:10px; border-top:1px solid color-mix(in srgb,var(--dsw-alias-label-tertiary) 13%,transparent); } }',
-      '@container (max-width:380px) { .to-title { font-size:19px; } .to-range { padding:0 6px; } .to-breakdown { grid-template-columns:repeat(2,minmax(0,1fr)); } .to-detail { align-items:flex-start; flex-direction:column; gap:10px; } .to-report-link { width:100%; } }',
+      '@container (max-width:380px) { .to-range { padding:0 6px; } .to-breakdown { grid-template-columns:repeat(2,minmax(0,1fr)); } .to-detail { align-items:flex-start; flex-direction:column; gap:10px; } .to-report-link { width:100%; } }',
       '@media (prefers-reduced-motion:reduce) { .to-range,.to-bar-track,.to-bar-fill { animation:none !important; transition:none !important; } }',
     ].join('\n')
 
@@ -239,12 +239,11 @@ window.__ModuleLoader__.load({
       const range = overview?.ranges?.[rangeId]
       const metrics = range?.metrics
       return React.createElement('div', { className: 'to-root', 'aria-busy': snapshot?.refreshing || undefined },
-        React.createElement('header', { className: 'to-head' },
-          React.createElement('div', { className: 'to-head-main' },
-            React.createElement('div', { className: 'to-title-row' },
-              React.createElement('h2', { className: 'to-title' }, 'Token 总览')),
-            React.createElement('p', { className: 'to-copy' }, overview === undefined ? '统一查看这台电脑上的 AI 模型处理量、缓存、调用与成本。' : overview.clients.join(' · ')),
-            React.createElement('div', { className: 'to-freshness' }, `每 10 分钟自动更新 · 更新于 ${clock(snapshot?.updatedAt)}`, snapshot?.nextRefreshAt ? ` · 下次 ${clock(snapshot.nextRefreshAt)}` : ''))),
+        React.createElement(SettingsSectionHeader, {
+          title: 'Token 总览',
+          description: overview === undefined ? '统一查看这台电脑上的 AI 模型处理量、缓存、调用与成本。' : overview.clients.join(' · '),
+        }),
+        React.createElement('div', { className: 'to-freshness' }, `每 10 分钟自动更新 · 更新于 ${clock(snapshot?.updatedAt)}`, snapshot?.nextRefreshAt ? ` · 下次 ${clock(snapshot.nextRefreshAt)}` : ''),
         React.createElement('div', { className: 'to-ranges', role: 'group', 'aria-label': '统计范围' }, RANGE_OPTIONS.map(option =>
           React.createElement('button', { key: option.id, type: 'button', className: 'to-range', 'aria-pressed': rangeId === option.id, onClick: () => setRangeId(option.id) }, option.label))),
         networkError && overview === undefined
