@@ -6,8 +6,8 @@
 
 ## 代码结构是什么
 
-- `payload/token-overview/`：可安装的 Profile Host／Client 包和资源。
-- `support/tokscale-token-report/`：生成全机报告的配套 Skill。
+- `payload/token-overview/`：可安装的完整原生插件文件夹，包含源码、构建入口、Cordis patch、Host／Client 产物和资源。
+- `support/tokscale-token-report/INSTALL.md`：共享 Skill 的独立安装声明，不包含本机 Skill、报告或历史数据。
 - `manifest.json`：安装行、来源、主仓 commit 与逐文件哈希。
 - `tests/`：不依赖目标 DSH 的发布包契约测试。
 
@@ -18,6 +18,14 @@
 - `manifest.json`：安装器读取的完整性和组合入口。
 
 ## 最近改了什么
+
+### 2026-09-05 09:32 - 分时费用跟随共享官方价格
+
+- 本次任务：同步主仓已推送的 Token 分时计费修复，保留独立原生插件的安装与显示契约。
+- 改了哪些文件：插件 payload、manifest、双语 README、INSTALL、共享 Skill 安装声明和本文件。
+- 改了什么：将报告价格快照传入原生小时统计器的私有配置，免费模型使用私有零价条目，旧快照启动时自动刷新；补齐源码与独立构建入口。移除重复打包的旧 Skill，改为依赖用户授权的 canonical 安装，机器已安装的 Skill 不受影响。
+- 为什么这样改：总费用与分时图原先来自不同价格源；单一 Skill 和单一价格快照避免版本分叉与旧价残留。
+- 影响了哪些模块：只影响 Token 总览后台计费和安装声明；前端交互、统计数量、全局 Tokscale 设置、原始会话和历史保护不变。第 1–3 节已复核并同步目录说明。
 
 ### 2026-08-29 - 统一设置页标题
 

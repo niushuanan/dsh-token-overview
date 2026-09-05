@@ -8,6 +8,8 @@
 
 Token 总览设置页复用产品统一标题层级；安装到尚未提供该共享组件的旧版 DSH 时会使用同尺寸的内置兼容标题。
 
+当前 master 已统一总费用与分时图的价格口径：读取共享 Skill 核验的官方价格快照，在原生逐消息统计时计费，保留原始模型名、Token 数量和历史保护。费用为 API 等值估算，不是实际账单；活跃会话可能造成先后扫描的时间差异。本次未改动旧 Release，请使用 master 获取本次修复。
+
 <p align="center"><img src="docs/16-token-overview.webp" alt="跨客户端 Token 指标与分时趋势" width="800"></p>
 
 ## 安装
@@ -19,7 +21,7 @@ Token 总览设置页复用产品统一标题层级；安装到尚未提供该�
 
 ## 运行要求
 
-- 安装 AI 需要把 `support/tokscale-token-report` 复制到 `~/.codex/skills/tokscale-token-report`；仓库不包含本机报告、历史锁或价格缓存。
+- 需要用户已授权安装的最新共享 `tokscale-token-report` Skill，见 [安装声明](support/tokscale-token-report/INSTALL.md)。全机只保留一份 canonical Skill；本仓库不再携带容易过期的重复副本，也不包含本机报告、历史锁或价格缓存。
 
 ## 内容
 
@@ -30,4 +32,4 @@ Token 总览设置页复用产品统一标题层级；安装到尚未提供该�
 
 ## 来源与许可
 
-本仓库是 [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh) 的单向发布副本，不是独立开发源。当前内容同步自主仓库 commit [`e4845a8168`](https://github.com/niushuanan/xiaozhuang-dsh/commit/e4845a81688efec24ecff6d9c61dfbe1b8194776)，最近正式发布版本仍为 [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2)。代码采用 [MIT License](LICENSE)。
+本仓库是 [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh) 的单向发布副本，不是独立开发源。当前内容同步自主仓库 commit [`5bc8560e61`](https://github.com/niushuanan/xiaozhuang-dsh/commit/5bc8560e612d95230e03385290d72740d16a4a54)，最近正式发布版本仍为 [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2)。代码采用 [MIT License](LICENSE)。

@@ -8,6 +8,8 @@ See tokens, cache usage, calls, active periods, and estimated cost across AI cli
 
 The Token Overview Settings page reuses the product's shared title hierarchy. Older DSH builds without that primitive receive a size-matched built-in fallback.
 
+Current master uses the shared Skill's verified price snapshot for both total and hourly costs, with native per-message pricing before aggregation. Model names, token quantities, and protected history remain intact. Costs are API-equivalent estimates, not invoices; ongoing activity can cause timing differences between scans. Existing releases are unchanged; use master for this fix.
+
 <p align="center"><img src="docs/16-token-overview.webp" alt="Cross-client token metrics and time-of-day trend" width="800"></p>
 
 ## Install
@@ -19,7 +21,7 @@ The Token Overview Settings page reuses the product's shared title hierarchy. Ol
 
 ## Requirements
 
-- The installing AI must copy `support/tokscale-token-report` to `~/.codex/skills/tokscale-token-report`. Machine reports, history locks, and pricing caches are not included.
+- A user-authorized current installation of the shared `tokscale-token-report` Skill is required; see the [installation declaration](support/tokscale-token-report/INSTALL.md). Keep one canonical copy across clients. This repository no longer bundles a divergent Skill copy, machine reports, history locks, or pricing caches.
 
 ## Contents
 
@@ -30,4 +32,4 @@ The Token Overview Settings page reuses the product's shared title hierarchy. Ol
 
 ## Source and license
 
-This repository is a one-way distribution mirror of [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh), not an independent development source. It is synchronized from main-repository commit [`e4845a8168`](https://github.com/niushuanan/xiaozhuang-dsh/commit/e4845a81688efec24ecff6d9c61dfbe1b8194776); the latest tagged release remains [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2). Licensed under the [MIT License](LICENSE).
+This repository is a one-way distribution mirror of [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh), not an independent development source. It is synchronized from main-repository commit [`5bc8560e61`](https://github.com/niushuanan/xiaozhuang-dsh/commit/5bc8560e612d95230e03385290d72740d16a4a54); the latest tagged release remains [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2). Licensed under the [MIT License](LICENSE).

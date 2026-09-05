@@ -11,10 +11,16 @@
     "./package.json": "./package.json"
   },
   "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "platform": "web",
       "immediately": true,
       "inject": []
     }
+  },
+  "scripts": {
+    "bundle": "node scripts/build.mjs"
   }
 }

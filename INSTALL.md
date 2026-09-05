@@ -2,11 +2,14 @@
 
 ## 直接安装
 
+本次 master 包含 DSH 0.1.3 的完整插件文件夹（源码、构建入口、Cordis patch 与运行产物）。源码 checkout 优先把 `payload/token-overview/profile/token-overview/` 放到根 `plugins/token-overview/`，由物理目录发现；旧 Profile 安装方式继续按以下流程处理。不要同时启用两份同名插件。
+
 1. 确认目标是 DSH 源码 checkout 或可写 Profile，并保留现有未提交改动。
 2. 对每个插件读取 manifest 中的 sources 与 rows。repository 源按其原相对路径合入源码；profile 源可作为 out-of-tree 包放入目标 Profile 的 packages 目录。
 3. 合并 package.json／TypeScript 引用／Web bundle 依赖和 Cordis rows；同 id 的行只合并本插件需要的 name、config 与 disabled，不覆盖其他字段。
 4. 复用目标版本已有依赖，缺失依赖按目标仓库的包管理方式安装。
 5. 执行所选包的定向构建，并从真实设置或对话入口确认能力出现。
+6. 按 `support/tokscale-token-report/INSTALL.md` 确认机器已有授权的共享 Skill；不要用旧副本覆盖它。验证价格来源、总费用与分时价格口径，并确认缺少价格的模型仍然可见。
 
 ## 冲突或失败兜底
 
