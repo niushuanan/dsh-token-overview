@@ -12,9 +12,11 @@ Token 总览设置页复用产品统一标题层级；安装到尚未提供该�
 
 <p align="center"><img src="docs/16-token-overview.webp" alt="跨客户端 Token 指标与分时趋势" width="800"></p>
 
+当前 master 按原生插件文件夹发布，设置入口保留插件自有的原设计图标；删除对应插件文件夹即可卸载。共享兼容补丁和安装检查见 [INSTALL.md](INSTALL.md)。
+
 ## 安装
 
-1. 打开 [Releases](https://github.com/niushuanan/dsh-token-overview/releases/latest)，下载附带的 ZIP。
+1. 点击 GitHub 的 **Code → Download ZIP** 获取当前 master；旧 Release 不包含本次修复。
 2. 把 ZIP 交给能够读取并修改目标 DSH 项目的 AI。
 3. 对 AI 说：**先阅读压缩包里的 AGENTS.md、INSTALL.md 和 manifest.json，只安装这个插件，并保留现有插件、数据、对话、附件和设置。**
 4. 安装 AI 会按目标 DSH 的当前结构合入代码和 Cordis 行，只验证本插件直接涉及的入口。
@@ -32,4 +34,4 @@ Token 总览设置页复用产品统一标题层级；安装到尚未提供该�
 
 ## 来源与许可
 
-本仓库是 [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh) 的单向发布副本，不是独立开发源。当前内容同步自主仓库 commit [`5bc8560e61`](https://github.com/niushuanan/xiaozhuang-dsh/commit/5bc8560e612d95230e03385290d72740d16a4a54)，最近正式发布版本仍为 [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2)。代码采用 [MIT License](LICENSE)。
+本仓库是 [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh) 的单向发布副本，不是独立开发源。当前内容同步自主仓库 commit [`e745482d8f`](https://github.com/niushuanan/xiaozhuang-dsh/commit/e745482d8f5e33497d9ed46a2a88681456024334)，最近正式发布版本仍为 [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2)。代码采用 [MIT License](LICENSE)。

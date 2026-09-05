@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "kind": "xiaozhuang-dsh-plugin-export",
-  "createdAt": "2026-09-05T01:34:49.227Z",
-  "sourceCommit": "5bc8560e612d95230e03385290d72740d16a4a54",
+  "createdAt": "2026-09-05T04:07:04.053Z",
+  "sourceCommit": "e745482d8f5e33497d9ed46a2a88681456024334",
   "plugins": [
     {
       "id": "token-overview",
@@ -10,72 +10,72 @@
       "rows": [
         {
           "id": "token-overview",
-          "name": "@deepseek-ai/dsh-token-overview"
+          "name": "./lib/index.js"
         }
       ],
       "sources": [
         {
-          "kind": "profile",
-          "path": "token-overview"
+          "kind": "product",
+          "path": "plugins/token-overview"
         }
       ]
     }
   ],
   "files": [
     {
-      "path": "payload/token-overview/profile/token-overview/assets/token-overview-icon.png",
+      "path": "payload/shared/settings-icons.patch",
+      "size": 3863,
+      "sha256": "77e0d4dd0bb02e1946301320ec813972f5cfc0054c408c5e5dd44690e5f692a4"
+    },
+    {
+      "path": "payload/token-overview/product/plugins/token-overview/assets/token-overview-icon.png",
       "size": 8253,
       "sha256": "cf82d305a7b3c8a66d3f49a0fdf7d84251e59af11c78e1d29ef4ab81df1f9a78"
     },
     {
-      "path": "payload/token-overview/profile/token-overview/cordis.patch.yml",
+      "path": "payload/token-overview/product/plugins/token-overview/cordis.patch.yml",
       "size": 62,
       "sha256": "e545d63f696fd7175ae4bd428aab4f606aab54ded5f7479c172ae43c2a4767ba"
     },
     {
-      "path": "payload/token-overview/profile/token-overview/lib/client.js",
-      "size": 26812,
-      "sha256": "6bd3351bbee7e914f7b79a02112c6e82e76028833cf0889eaf848ee1429d94c1"
+      "path": "payload/token-overview/product/plugins/token-overview/lib/client.js",
+      "size": 27006,
+      "sha256": "968b03e01fdd881e9f60b5a65a9899ea387ae6c3a8b9cc01ed39e27d25ff2a58"
     },
     {
-      "path": "payload/token-overview/profile/token-overview/lib/hourly-pricing.js",
+      "path": "payload/token-overview/product/plugins/token-overview/lib/hourly-pricing.js",
       "size": 2409,
       "sha256": "be2104c5c0429dc1379b8a1e380050e1c91e01326dd1707be6c025effda3b9bb"
     },
     {
-      "path": "payload/token-overview/profile/token-overview/lib/index.js",
+      "path": "payload/token-overview/product/plugins/token-overview/lib/index.js",
       "size": 25242,
       "sha256": "c5f110e1dce64ff624bfbc9cbd97e3b056456ccacb7f94055bf01260efbb8277"
     },
     {
-      "path": "payload/token-overview/profile/token-overview/package.json",
+      "path": "payload/token-overview/product/plugins/token-overview/package.json",
       "size": 594,
       "sha256": "1e27f7df359d83a6f5c49c2f176070b28f8d0e7b7f003d7940e60a28bb573b52"
     },
     {
-      "path": "payload/token-overview/profile/token-overview/scripts/build.mjs",
+      "path": "payload/token-overview/product/plugins/token-overview/scripts/build.mjs",
       "size": 243,
       "sha256": "9011bdbc4a3b54acb070bdd3f5a1cb86dfa2674054b303192efbd8a8fd0f768b"
     },
     {
-      "path": "payload/token-overview/profile/token-overview/src/client.js",
-      "size": 26812,
-      "sha256": "6bd3351bbee7e914f7b79a02112c6e82e76028833cf0889eaf848ee1429d94c1"
+      "path": "payload/token-overview/product/plugins/token-overview/src/client.js",
+      "size": 27006,
+      "sha256": "968b03e01fdd881e9f60b5a65a9899ea387ae6c3a8b9cc01ed39e27d25ff2a58"
     },
     {
-      "path": "payload/token-overview/profile/token-overview/src/hourly-pricing.js",
+      "path": "payload/token-overview/product/plugins/token-overview/src/hourly-pricing.js",
       "size": 2409,
       "sha256": "be2104c5c0429dc1379b8a1e380050e1c91e01326dd1707be6c025effda3b9bb"
     },
     {
-      "path": "payload/token-overview/profile/token-overview/src/index.js",
+      "path": "payload/token-overview/product/plugins/token-overview/src/index.js",
       "size": 25242,
       "sha256": "c5f110e1dce64ff624bfbc9cbd97e3b056456ccacb7f94055bf01260efbb8277"
-    },
-    {
-      "path": "support/tokscale-token-report/INSTALL.md",
-      "size": 1032,
-      "sha256": "92a2863ead4c9e9926d129bab62cec1f0cbf1804d49e21b70256b9f782cf2875"
     }
   ],
   "excludes": [
@@ -88,9 +88,11 @@
     "conversation history",
     "user settings"
   ],
-  "repository": "https://github.com/niushuanan/dsh-token-overview",
-  "releaseTag": "xiaozhuang-v0.4.2",
   "sourceRepository": "https://github.com/niushuanan/xiaozhuang-dsh",
+  "repository": "https://github.com/niushuanan/dsh-token-overview",
+  "compatibilityPatches": [
+    "payload/shared/settings-icons.patch"
+  ],
   "requirements": {
     "skills": [
       {
