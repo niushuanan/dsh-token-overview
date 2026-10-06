@@ -1,5 +1,7 @@
 # dsh-token-overview
 
+当前 master 面向 Harness **0.2.1-alpha.1**，已使用 [dsh-plugin-upgrade-skill](https://github.com/oh-my-dsh/dsh-plugin-upgrade-skill/) 完成原生插件适配。下载当前分支获得本次源码更新；既有 Release 保持各自原版本。
+
 [English](README.en.md) | 中文
 
 [![DSH Plugin](https://img.shields.io/badge/DSH-Plugin-111111)](https://github.com/niushuanan/xiaozhuang-dsh) [![Release](https://img.shields.io/badge/release-xiaozhuang--v0.4.2-2563eb)](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2) [![MIT](https://img.shields.io/badge/license-MIT-16a34a)](LICENSE)

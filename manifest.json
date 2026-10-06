@@ -1,8 +1,12 @@
 {
   "schemaVersion": 1,
   "kind": "xiaozhuang-dsh-plugin-export",
-  "createdAt": "2026-09-05T04:07:04.053Z",
-  "sourceCommit": "e745482d8f5e33497d9ed46a2a88681456024334",
+  "createdAt": "2026-10-06T18:40:04.058033+00:00",
+  "sourceCommit": "efbbbc6a1977cf4559bf306221533eb16393664c",
+  "sourceRepository": "https://github.com/niushuanan/xiaozhuang-dsh",
+  "repository": "https://github.com/niushuanan/dsh-token-overview",
+  "targetHarness": "0.2.1-alpha.1",
+  "upgradeWorkflow": "https://github.com/oh-my-dsh/dsh-plugin-upgrade-skill/",
   "plugins": [
     {
       "id": "token-overview",
@@ -18,14 +22,35 @@
           "kind": "product",
           "path": "plugins/token-overview"
         }
-      ]
+      ],
+      "version": "1.1.0"
     }
   ],
   "files": [
     {
-      "path": "payload/shared/settings-icons.patch",
-      "size": 3863,
-      "sha256": "77e0d4dd0bb02e1946301320ec813972f5cfc0054c408c5e5dd44690e5f692a4"
+      "path": "payload/shared/deliverable-file-path.patch",
+      "size": 2379,
+      "sha256": "65120b70cad2e196a4bee54911eced508f45818dc7dac1f1d7fd4a9de1ff3c73"
+    },
+    {
+      "path": "payload/shared/native-plugin-loading.patch",
+      "size": 23851,
+      "sha256": "136f4832023c8422906bbd86ede896ecb26d066931abf59db6fe2d094d4f2325"
+    },
+    {
+      "path": "payload/shared/session-state-compatibility.patch",
+      "size": 19961,
+      "sha256": "58bc1b86e2a347d0e29477877f96190379b04dc07bb3f37bd7f0f37fc3a3fef2"
+    },
+    {
+      "path": "payload/shared/settings-and-ui-slots.patch",
+      "size": 73183,
+      "sha256": "ce217a393adba9a3c3d1692ea14868a7d8f3d4e936a3895c216ae1f7d136a176"
+    },
+    {
+      "path": "payload/token-overview/product/plugins/token-overview/assets/report.html",
+      "size": 105609,
+      "sha256": "bfd43b08605ca119da4c5cdcf507c8c6c4b3536eecacaa9f703931bf0e337974"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/token-overview-icon.png",
@@ -39,8 +64,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/client.js",
-      "size": 27006,
-      "sha256": "968b03e01fdd881e9f60b5a65a9899ea387ae6c3a8b9cc01ed39e27d25ff2a58"
+      "size": 27442,
+      "sha256": "76215e93b8c2329a5ea08ddc3f60050db18cee010fa37c1d32935af0951cd926"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/hourly-pricing.js",
@@ -49,13 +74,13 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/index.js",
-      "size": 25242,
-      "sha256": "c5f110e1dce64ff624bfbc9cbd97e3b056456ccacb7f94055bf01260efbb8277"
+      "size": 30611,
+      "sha256": "76056f682d48ac9859c70a56dc748a54414333ce88dac7327f7794338169e684"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/package.json",
-      "size": 594,
-      "sha256": "1e27f7df359d83a6f5c49c2f176070b28f8d0e7b7f003d7940e60a28bb573b52"
+      "size": 636,
+      "sha256": "637147ea1955243b095f3e47b9776fd53eedbdc5ecbb213b71ab14f173f26e33"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/scripts/build.mjs",
@@ -64,8 +89,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/client.js",
-      "size": 27006,
-      "sha256": "968b03e01fdd881e9f60b5a65a9899ea387ae6c3a8b9cc01ed39e27d25ff2a58"
+      "size": 27442,
+      "sha256": "76215e93b8c2329a5ea08ddc3f60050db18cee010fa37c1d32935af0951cd926"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/hourly-pricing.js",
@@ -74,32 +99,23 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/index.js",
-      "size": 25242,
-      "sha256": "c5f110e1dce64ff624bfbc9cbd97e3b056456ccacb7f94055bf01260efbb8277"
+      "size": 30611,
+      "sha256": "76056f682d48ac9859c70a56dc748a54414333ce88dac7327f7794338169e684"
     }
+  ],
+  "compatibilityPatches": [
+    "payload/shared/native-plugin-loading.patch",
+    "payload/shared/settings-and-ui-slots.patch",
+    "payload/shared/session-state-compatibility.patch",
+    "payload/shared/deliverable-file-path.patch"
   ],
   "excludes": [
     "node_modules",
-    "Git metadata",
-    "tests",
-    "caches",
     "credentials",
     "sessions",
-    "conversation history",
-    "user settings"
-  ],
-  "sourceRepository": "https://github.com/niushuanan/xiaozhuang-dsh",
-  "repository": "https://github.com/niushuanan/dsh-token-overview",
-  "compatibilityPatches": [
-    "payload/shared/settings-icons.patch"
-  ],
-  "requirements": {
-    "skills": [
-      {
-        "name": "tokscale-token-report",
-        "installation": "support/tokscale-token-report/INSTALL.md",
-        "bundled": false
-      }
-    ]
-  }
+    "attachments",
+    "user settings",
+    "caches",
+    "test outputs"
+  ]
 }
