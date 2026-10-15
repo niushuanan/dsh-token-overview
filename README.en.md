@@ -1,6 +1,6 @@
 # dsh-token-overview
 
-Version **1.2.0** adds a three-minute daily forecast with fourteen intraday dimensions, retained hourly observations, independent platform forecasts and per-time historical errors. Prediction ranges remain provisional when complete hourly history is sparse; costs are API-equivalent estimates, not bills.
+Version **1.2.1** keeps today’s forecast in a regular detailed-report section: daily total, observed usage, remaining usage and a compact hourly chart, refreshed every three minutes. It shares the report’s platform filter and collapses historical errors and sample notes.
 
 Current master targets Harness **0.2.1-alpha.1** and includes the native plugin upgrade made with [dsh-plugin-upgrade-skill](https://github.com/oh-my-dsh/dsh-plugin-upgrade-skill/). Download the current branch for this source update; existing releases retain their original version.
 
@@ -38,4 +38,4 @@ Current master ships complete native plugin folders and preserves each Settings 
 
 ## Source and license
 
-This repository is a one-way distribution mirror of [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh), not an independent development source. It is synchronized from [committed main source](https://github.com/niushuanan/xiaozhuang-dsh/commit/9ff9d234544a76eefd8ca8e5615c40fdb05156b7); the latest tagged release remains [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2). Licensed under the [MIT License](LICENSE).
+This repository is a one-way distribution mirror of [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh), not an independent development source. It is synchronized from [committed main source](https://github.com/niushuanan/xiaozhuang-dsh/commit/efd860ec2e47c34bab4a41ce409ba051e4de6d1e); the latest tagged release remains [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2). Licensed under the [MIT License](LICENSE).

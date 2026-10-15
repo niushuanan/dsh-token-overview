@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "kind": "xiaozhuang-dsh-plugin-export",
-  "createdAt": "2026-10-15T09:27:32.235502+00:00",
-  "sourceCommit": "9ff9d234544a76eefd8ca8e5615c40fdb05156b7",
+  "createdAt": "2026-10-15T09:37:08.625166+00:00",
+  "sourceCommit": "efd860ec2e47c34bab4a41ce409ba051e4de6d1e",
   "sourceRepository": "https://github.com/niushuanan/xiaozhuang-dsh",
   "repository": "https://github.com/niushuanan/dsh-token-overview",
   "targetHarness": "0.2.1-alpha.1",
@@ -23,7 +23,7 @@
           "path": "plugins/token-overview"
         }
       ],
-      "version": "1.2.0"
+      "version": "1.2.1"
     }
   ],
   "files": [
@@ -49,23 +49,23 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/README.md",
-      "size": 4058,
-      "sha256": "5cf86ee205d38eff33c2a63c643862388c0e11238faa25f4f57bc79d96e322b3"
+      "size": 3801,
+      "sha256": "7cf681ab46e8b1276a508114ce23dcd0da3fbe2187478a3f989b3c9b92d75dc6"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/forecast.css",
-      "size": 4132,
-      "sha256": "58ee0a8e48af85b75d89d7ff3a2b6ec3bc378f9061232c34b13a492aa122e8d0"
+      "size": 1415,
+      "sha256": "6dd0a39d91aa74fd9c9251b4be5f5ab3563d25104626e08c3e1cf3efebd73e03"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/forecast.js",
-      "size": 12142,
-      "sha256": "e905f56ff9ff1e13f1523dbcda123a699b0c5c84e455282aed966c7d8be590c2"
+      "size": 5857,
+      "sha256": "165ee7519da7f8b9c3215060d473fe42971557a90c97f973bdcc999fc67faeb2"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/report.html",
-      "size": 104500,
-      "sha256": "432a8189b947b620c8024a3cfd4248be7be849fa92cc70e7f33afd3923f2c7f0"
+      "size": 104614,
+      "sha256": "7e5bd88eb2630096ad07f72213f5bcc9ae4d6c4da1959ab3e203d889006afdba"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/token-overview-icon.png",
@@ -79,8 +79,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/client.js",
-      "size": 29806,
-      "sha256": "4729b8e0e7a2cee9d034a4adcb079772bbf7aa38cccd3d41d156c43e9ef58ec9"
+      "size": 27346,
+      "sha256": "f3821d4bff9ccb8c9c3ec339015c93564e3fd954f20732724ee7d1922ee1d25a"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/forecast-history.js",
@@ -105,7 +105,7 @@
     {
       "path": "payload/token-overview/product/plugins/token-overview/package.json",
       "size": 643,
-      "sha256": "23f957e4d3f39683013aa6e3fda5e5262fb2244ff4ac477e25e2f986d2025066"
+      "sha256": "0c59065e9d77664838a85c0d294450eadb8ec890333d7e785c516abc1a53122c"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/scripts/backtest.mjs",
@@ -119,8 +119,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/client.js",
-      "size": 29806,
-      "sha256": "4729b8e0e7a2cee9d034a4adcb079772bbf7aa38cccd3d41d156c43e9ef58ec9"
+      "size": 27346,
+      "sha256": "f3821d4bff9ccb8c9c3ec339015c93564e3fd954f20732724ee7d1922ee1d25a"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/forecast-history.js",
