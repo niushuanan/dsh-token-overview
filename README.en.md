@@ -1,6 +1,6 @@
 # dsh-token-overview
 
-Version **1.3.0** replaces linear extrapolation with direct hourly random-forest and trajectory-kernel forecasts. One regular report section switches between hourly bars and cumulative solid/dashed curves, compared with yesterday and the previous seven days. Issued forecasts are retained for outcome scoring; 10% is a target, not a daily guarantee. See [methodology and GitHub research](payload/token-overview/product/plugins/token-overview/FORECASTING.md).
+Version **1.4.0** adds cumulative milestones with crossing dates, calendar/active days, equal-volume stage durations, daily peaks and usage streaks. A compact timeline focuses milestone points and shows remaining progress. Date filters crop lifetime totals instead of resetting them; Settings adds one small history link and estimated crossings remain marked approximate.
 
 Current master targets Harness **0.2.1-alpha.1** and includes the native plugin upgrade made with [dsh-plugin-upgrade-skill](https://github.com/oh-my-dsh/dsh-plugin-upgrade-skill/). Download the current branch for this source update; existing releases retain their original version.
 
@@ -38,4 +38,4 @@ Current master ships complete native plugin folders and preserves each Settings 
 
 ## Source and license
 
-This repository is a one-way distribution mirror of [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh), not an independent development source. It is synchronized from [committed main source](https://github.com/niushuanan/xiaozhuang-dsh/commit/4184b4169e01c14d167487129a9ce32631e85589); the latest tagged release remains [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2). Licensed under the [MIT License](LICENSE).
+This repository is a one-way distribution mirror of [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh), not an independent development source. It is synchronized from [committed main source](https://github.com/niushuanan/xiaozhuang-dsh/commit/7e84c55a79bf97ba9c3a60f04fb05631e6c3ed6a); the latest tagged release remains [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2). Licensed under the [MIT License](LICENSE).

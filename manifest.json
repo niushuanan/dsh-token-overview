@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "kind": "xiaozhuang-dsh-plugin-export",
-  "createdAt": "2026-10-16T05:23:23.135457+00:00",
-  "sourceCommit": "4184b4169e01c14d167487129a9ce32631e85589",
+  "createdAt": "2026-10-16T05:33:07.850643+00:00",
+  "sourceCommit": "7e84c55a79bf97ba9c3a60f04fb05631e6c3ed6a",
   "sourceRepository": "https://github.com/niushuanan/xiaozhuang-dsh",
   "repository": "https://github.com/niushuanan/dsh-token-overview",
   "targetHarness": "0.2.1-alpha.1",
@@ -23,7 +23,7 @@
           "path": "plugins/token-overview"
         }
       ],
-      "version": "1.3.0"
+      "version": "1.4.0"
     }
   ],
   "files": [
@@ -54,8 +54,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/README.md",
-      "size": 3929,
-      "sha256": "27f84eac7db0c9a7bfd00046ac61e9a04f394b763580e9e4bdb099ae97d4c596"
+      "size": 5489,
+      "sha256": "0513e5b1ba8c4b7a6e4fdf0b5d2713fc747b9a58acdaf902d1b0fdb53a99fb1a"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/THIRD_PARTY_NOTICES.md",
@@ -74,8 +74,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/report.html",
-      "size": 104614,
-      "sha256": "7e5bd88eb2630096ad07f72213f5bcc9ae4d6c4da1959ab3e203d889006afdba"
+      "size": 124015,
+      "sha256": "8db5a6fce7d5ba30f6c9999b31f434d78193916259c4f226e7aba580af3b2fe6"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/token-overview-icon.png",
@@ -89,8 +89,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/client.js",
-      "size": 27346,
-      "sha256": "f3821d4bff9ccb8c9c3ec339015c93564e3fd954f20732724ee7d1922ee1d25a"
+      "size": 28987,
+      "sha256": "844f55217b5a9a7b34cf764dd9e8ee20e6505d619da4c0462287a018a7dbfced"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/forecast-accuracy.js",
@@ -134,13 +134,18 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/index.js",
-      "size": 37602,
-      "sha256": "1d3605bd87c53ad27b59675a3dc3c0f5e610cc83a2cc2f164ea7a3d91704c577"
+      "size": 38057,
+      "sha256": "8dacc094c45beb3d6404c4b0ce51a2c347a1707cedb3929dd82675c0858e0343"
+    },
+    {
+      "path": "payload/token-overview/product/plugins/token-overview/lib/journey.js",
+      "size": 4284,
+      "sha256": "de4368c64840d39a7efb96cbe5be77cd6202028eda53afb0b350a25ae9f64576"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/package.json",
-      "size": 749,
-      "sha256": "af42c7c97d8b8de2b60b775d0d3f0e1f2c234fe7fd02d97969684072863b24ec"
+      "size": 755,
+      "sha256": "76ef8a602abf9ef440922d6d98aee4c349019fbab0f17b97fe431c6927b1dc22"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/scripts/backtest.mjs",
@@ -149,13 +154,13 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/scripts/build.mjs",
-      "size": 694,
-      "sha256": "6a16300ae2eddc622227caf51865fdca201698bf4259a1935ac2f2a6c5ebfef2"
+      "size": 1359,
+      "sha256": "2f3e3a9263046a1337eba3ebab1ec2b029aacfb35889bfdd5fe681269cdedd61"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/client.js",
-      "size": 27346,
-      "sha256": "f3821d4bff9ccb8c9c3ec339015c93564e3fd954f20732724ee7d1922ee1d25a"
+      "size": 28987,
+      "sha256": "844f55217b5a9a7b34cf764dd9e8ee20e6505d619da4c0462287a018a7dbfced"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/forecast-accuracy.js",
@@ -199,8 +204,13 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/index.js",
-      "size": 37602,
-      "sha256": "1d3605bd87c53ad27b59675a3dc3c0f5e610cc83a2cc2f164ea7a3d91704c577"
+      "size": 38057,
+      "sha256": "8dacc094c45beb3d6404c4b0ce51a2c347a1707cedb3929dd82675c0858e0343"
+    },
+    {
+      "path": "payload/token-overview/product/plugins/token-overview/src/journey.js",
+      "size": 4284,
+      "sha256": "de4368c64840d39a7efb96cbe5be77cd6202028eda53afb0b350a25ae9f64576"
     }
   ],
   "compatibilityPatches": [
