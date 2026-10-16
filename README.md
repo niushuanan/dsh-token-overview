@@ -1,6 +1,6 @@
 # dsh-token-overview
 
-**1.2.1** 将今日预测收敛为详细报告中的普通板块，只保留全天预计、已用、剩余和紧凑小时图，每三分钟更新。平台筛选复用报告现有入口，历史误差与样本说明默认折叠。
+**1.3.0** 重做非线性逐小时预测，使用随机森林和历史轨迹核回归；一个普通报告板块可切换小时柱图与累计走势，已用实线、预测虚线，并对照昨天和近七日均值。新增真实预测结算误差记录，10% 是目标，不宣称每天都能保证。算法选择与 GitHub 依据见[预测说明](payload/token-overview/product/plugins/token-overview/FORECASTING.md)。
 
 当前 master 面向 Harness **0.2.1-alpha.1**，已使用 [dsh-plugin-upgrade-skill](https://github.com/oh-my-dsh/dsh-plugin-upgrade-skill/) 完成原生插件适配。下载当前分支获得本次源码更新；既有 Release 保持各自原版本。
 
@@ -38,4 +38,4 @@ Token 总览设置页复用产品统一标题层级；安装到尚未提供该�
 
 ## 来源与许可
 
-本仓库是 [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh) 的单向发布副本，不是独立开发源。当前内容同步自[主仓已提交源码](https://github.com/niushuanan/xiaozhuang-dsh/commit/efd860ec2e47c34bab4a41ce409ba051e4de6d1e)，最近正式发布版本仍为 [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2)。代码采用 [MIT License](LICENSE)。
+本仓库是 [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh) 的单向发布副本，不是独立开发源。当前内容同步自[主仓已提交源码](https://github.com/niushuanan/xiaozhuang-dsh/commit/4184b4169e01c14d167487129a9ce32631e85589)，最近正式发布版本仍为 [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2)。代码采用 [MIT License](LICENSE)。
