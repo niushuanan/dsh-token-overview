@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "kind": "xiaozhuang-dsh-plugin-export",
-  "createdAt": "2026-10-16T06:17:02.794984+00:00",
-  "sourceCommit": "dc4cb300550163e892032773c8889cafd4c39d5f",
+  "createdAt": "2026-10-16T06:33:51.194838+00:00",
+  "sourceCommit": "6ec99de801e61c8b2df6420ede4ca7363156a197",
   "sourceRepository": "https://github.com/niushuanan/xiaozhuang-dsh",
   "repository": "https://github.com/niushuanan/dsh-token-overview",
   "targetHarness": "0.2.1-alpha.1",
@@ -23,7 +23,7 @@
           "path": "plugins/token-overview"
         }
       ],
-      "version": "1.4.1"
+      "version": "1.4.2"
     }
   ],
   "files": [
@@ -54,8 +54,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/README.md",
-      "size": 5961,
-      "sha256": "be6cbf9b7086d7beaa860e622e7d03c3f24e99a4825088e6f9bd764d930583e8"
+      "size": 6627,
+      "sha256": "4647ff1e851bfe8bbefc742da89a4ccdd0beefaaf5214821e9d46b7fbaf789a4"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/THIRD_PARTY_NOTICES.md",
@@ -89,8 +89,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/client.js",
-      "size": 28987,
-      "sha256": "844f55217b5a9a7b34cf764dd9e8ee20e6505d619da4c0462287a018a7dbfced"
+      "size": 33443,
+      "sha256": "4d702cbecf2d66b10d0cea6469c37f29ef6bf200b55ae4c5699acbacb437ceb5"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/forecast-accuracy.js",
@@ -134,8 +134,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/index.js",
-      "size": 38503,
-      "sha256": "c80689843ac7b7e9a332a2ecb8cda753921134cf157a8a446408c0d81f2cb1e8"
+      "size": 39662,
+      "sha256": "5609150f21384b7aab0da5cde2b08647670654173110cd82ada34f58f0455edb"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/journey.js",
@@ -145,7 +145,7 @@
     {
       "path": "payload/token-overview/product/plugins/token-overview/package.json",
       "size": 755,
-      "sha256": "b4525c93bcdb03053dbb401c3b36502acc1788475eac16d458498a301f9b9b64"
+      "sha256": "8f39dc5af10d7c8751df3ad691c0507771ee763c7752dc9331bbbe270dfea75e"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/scripts/backtest.mjs",
@@ -159,8 +159,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/client.js",
-      "size": 28987,
-      "sha256": "844f55217b5a9a7b34cf764dd9e8ee20e6505d619da4c0462287a018a7dbfced"
+      "size": 33443,
+      "sha256": "4d702cbecf2d66b10d0cea6469c37f29ef6bf200b55ae4c5699acbacb437ceb5"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/forecast-accuracy.js",
@@ -204,8 +204,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/index.js",
-      "size": 38503,
-      "sha256": "c80689843ac7b7e9a332a2ecb8cda753921134cf157a8a446408c0d81f2cb1e8"
+      "size": 39662,
+      "sha256": "5609150f21384b7aab0da5cde2b08647670654173110cd82ada34f58f0455edb"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/journey.js",

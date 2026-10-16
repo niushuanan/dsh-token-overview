@@ -1,6 +1,6 @@
 # dsh-token-overview
 
-**1.4.1** fixes forecasts stuck on an earlier hour by bounding forest training rows, reusing past feature contexts and enforcing a calculation deadline. Completed usage reports can publish independently of prediction failure. Hourly tooltips show their interval, and the footer keeps the real observation cutoff while distinguishing updating from delayed snapshots. Cumulative milestones and usage history from 1.4.0 remain available.
+**1.4.2** adds observed and projected daily totals to the existing Settings usage trend. The eight three-hour bars stack solid observed usage with pale, dashed-border predicted remainders. Selecting a period shows its prediction and measured detail from the same observation snapshot. It reuses the existing forecast cache and cadence; other date ranges continue to show measured usage.
 
 Current master targets Harness **0.2.1-alpha.1** and includes the native plugin upgrade made with [dsh-plugin-upgrade-skill](https://github.com/oh-my-dsh/dsh-plugin-upgrade-skill/). Download the current branch for this source update; existing releases retain their original version.
 
