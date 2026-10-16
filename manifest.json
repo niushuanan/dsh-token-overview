@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "kind": "xiaozhuang-dsh-plugin-export",
-  "createdAt": "2026-10-16T06:43:20.981126+00:00",
-  "sourceCommit": "37f1223134fd7e07b1e4360a932a0c257f21a712",
+  "createdAt": "2026-10-16T06:53:18.192877+00:00",
+  "sourceCommit": "50818017c3c6f8e8bfa5a1b96a910fcdc98b0e17",
   "sourceRepository": "https://github.com/niushuanan/xiaozhuang-dsh",
   "repository": "https://github.com/niushuanan/dsh-token-overview",
   "targetHarness": "0.2.1-alpha.1",
@@ -23,7 +23,7 @@
           "path": "plugins/token-overview"
         }
       ],
-      "version": "1.4.3"
+      "version": "1.4.4"
     }
   ],
   "files": [
@@ -54,8 +54,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/README.md",
-      "size": 6828,
-      "sha256": "c4385d6266c6e4c817cd2553454c6a73c0f8aa025f914dac606bd34accca74a9"
+      "size": 7025,
+      "sha256": "73df2930e5a9fa9edc301b2141c6f8fd903a116ee053d582b39ddc91d923896a"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/THIRD_PARTY_NOTICES.md",
@@ -89,8 +89,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/client.js",
-      "size": 33443,
-      "sha256": "4d702cbecf2d66b10d0cea6469c37f29ef6bf200b55ae4c5699acbacb437ceb5"
+      "size": 33544,
+      "sha256": "e2196612aca59388918234a7d589ea7031c129d8b9091202973f8f582fb7a41b"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/forecast-accuracy.js",
@@ -145,7 +145,7 @@
     {
       "path": "payload/token-overview/product/plugins/token-overview/package.json",
       "size": 755,
-      "sha256": "8fdb759900df1c0b9966a8cf823f532f992a28e1db3d1740e4884d989ca71667"
+      "sha256": "262a88de05079e70ca00c59be2e7a28c33ebaa8f491fdcaa6147e854b92f9eda"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/scripts/backtest.mjs",
@@ -159,8 +159,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/client.js",
-      "size": 33443,
-      "sha256": "4d702cbecf2d66b10d0cea6469c37f29ef6bf200b55ae4c5699acbacb437ceb5"
+      "size": 33544,
+      "sha256": "e2196612aca59388918234a7d589ea7031c129d8b9091202973f8f582fb7a41b"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/forecast-accuracy.js",

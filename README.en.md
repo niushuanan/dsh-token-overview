@@ -1,6 +1,6 @@
 # dsh-token-overview
 
-**1.4.3** groups hourly forecasts into adjacent bars for today, yesterday and the seven-day mean. Today stacks observed usage and predicted remainder; historical bars use muted fills. Cumulative curves remain available. The shared compatibility patch also fixes keyed Settings icon dispatch.
+**1.4.4** rounds Settings usage-trend summaries and period token counts to whole integers, for example 493.9M → 494M and 1,624,077.876 → 1,624,078. Forecast calculations and original data retain their precision.
 
 Current master targets Harness **0.2.1-alpha.1** and includes the native plugin upgrade made with [dsh-plugin-upgrade-skill](https://github.com/oh-my-dsh/dsh-plugin-upgrade-skill/). Download the current branch for this source update; existing releases retain their original version.
 
@@ -38,4 +38,4 @@ Current master ships complete native plugin folders and preserves each Settings 
 
 ## Source and license
 
-This repository is a one-way distribution mirror of [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh), not an independent development source. It is synchronized from [committed main source](https://github.com/niushuanan/xiaozhuang-dsh/commit/7e84c55a79bf97ba9c3a60f04fb05631e6c3ed6a); the latest tagged release remains [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2). Licensed under the [MIT License](LICENSE).
+This repository is a one-way distribution mirror of [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh), not an independent development source. It is synchronized from [committed main source](https://github.com/niushuanan/xiaozhuang-dsh/commit/50818017c3c6f8e8bfa5a1b96a910fcdc98b0e17); the latest tagged release remains [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2). Licensed under the [MIT License](LICENSE).

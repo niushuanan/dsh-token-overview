@@ -1,6 +1,6 @@
 # dsh-token-overview
 
-**1.4.3** 将预测的每小时视图改为并排柱：今天的已用与预计剩余叠为一柱，昨天和近七天均值各一柱，以柔和配色比较同一小时。累计视图保留实虚线；公共兼容补丁同时修复设置导航图标的 keyed 查找参数。
+**1.4.4** 将设置页用量趋势的顶部摘要和时段 Token 明细四舍五入为整数，例如 493.9M → 494M、1,624,077.876 → 1,624,078。仅调整显示，保留预测计算和原始数据精度。
 
 当前 master 面向 Harness **0.2.1-alpha.1**，已使用 [dsh-plugin-upgrade-skill](https://github.com/oh-my-dsh/dsh-plugin-upgrade-skill/) 完成原生插件适配。下载当前分支获得本次源码更新；既有 Release 保持各自原版本。
 
@@ -38,4 +38,4 @@ Token 总览设置页复用产品统一标题层级；安装到尚未提供该�
 
 ## 来源与许可
 
-本仓库是 [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh) 的单向发布副本，不是独立开发源。当前内容同步自[主仓已提交源码](https://github.com/niushuanan/xiaozhuang-dsh/commit/7e84c55a79bf97ba9c3a60f04fb05631e6c3ed6a)，最近正式发布版本仍为 [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2)。代码采用 [MIT License](LICENSE)。
+本仓库是 [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh) 的单向发布副本，不是独立开发源。当前内容同步自[主仓已提交源码](https://github.com/niushuanan/xiaozhuang-dsh/commit/50818017c3c6f8e8bfa5a1b96a910fcdc98b0e17)，最近正式发布版本仍为 [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2)。代码采用 [MIT License](LICENSE)。
