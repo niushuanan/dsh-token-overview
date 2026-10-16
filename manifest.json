@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "kind": "xiaozhuang-dsh-plugin-export",
-  "createdAt": "2026-10-16T06:33:51.194838+00:00",
-  "sourceCommit": "6ec99de801e61c8b2df6420ede4ca7363156a197",
+  "createdAt": "2026-10-16T06:43:20.981126+00:00",
+  "sourceCommit": "37f1223134fd7e07b1e4360a932a0c257f21a712",
   "sourceRepository": "https://github.com/niushuanan/xiaozhuang-dsh",
   "repository": "https://github.com/niushuanan/dsh-token-overview",
   "targetHarness": "0.2.1-alpha.1",
@@ -23,7 +23,7 @@
           "path": "plugins/token-overview"
         }
       ],
-      "version": "1.4.2"
+      "version": "1.4.3"
     }
   ],
   "files": [
@@ -44,18 +44,18 @@
     },
     {
       "path": "payload/shared/settings-and-ui-slots.patch",
-      "size": 73183,
-      "sha256": "ce217a393adba9a3c3d1692ea14868a7d8f3d4e936a3895c216ae1f7d136a176"
+      "size": 73187,
+      "sha256": "480f6615d48fe4b424c9f8265a6140a3d769aff61097da849732e0fe6232c11c"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/FORECASTING.md",
-      "size": 10324,
-      "sha256": "58b127518643805766d06763688dfbfafbb684cef23b64733a6e8b3e0047bd55"
+      "size": 10548,
+      "sha256": "405b7e123f8977b4c36ad62805787a4a09067f6d16400847c9cd0198e5baffa1"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/README.md",
-      "size": 6627,
-      "sha256": "4647ff1e851bfe8bbefc742da89a4ccdd0beefaaf5214821e9d46b7fbaf789a4"
+      "size": 6828,
+      "sha256": "c4385d6266c6e4c817cd2553454c6a73c0f8aa025f914dac606bd34accca74a9"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/THIRD_PARTY_NOTICES.md",
@@ -69,8 +69,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/forecast.js",
-      "size": 10342,
-      "sha256": "0b0072afd51e9b0dc7789b32423706e8d8217d9416f7cbfe6a7f3702cf0e13fe"
+      "size": 10563,
+      "sha256": "5ff69de386b818c3e7c7b132adc55d1a26413a0eb9c402271fc4138bd176ef4e"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/report.html",
@@ -145,7 +145,7 @@
     {
       "path": "payload/token-overview/product/plugins/token-overview/package.json",
       "size": 755,
-      "sha256": "8f39dc5af10d7c8751df3ad691c0507771ee763c7752dc9331bbbe270dfea75e"
+      "sha256": "8fdb759900df1c0b9966a8cf823f532f992a28e1db3d1740e4884d989ca71667"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/scripts/backtest.mjs",

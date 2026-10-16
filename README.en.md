@@ -1,6 +1,6 @@
 # dsh-token-overview
 
-**1.4.2** adds observed and projected daily totals to the existing Settings usage trend. The eight three-hour bars stack solid observed usage with pale, dashed-border predicted remainders. Selecting a period shows its prediction and measured detail from the same observation snapshot. It reuses the existing forecast cache and cadence; other date ranges continue to show measured usage.
+**1.4.3** groups hourly forecasts into adjacent bars for today, yesterday and the seven-day mean. Today stacks observed usage and predicted remainder; historical bars use muted fills. Cumulative curves remain available. The shared compatibility patch also fixes keyed Settings icon dispatch.
 
 Current master targets Harness **0.2.1-alpha.1** and includes the native plugin upgrade made with [dsh-plugin-upgrade-skill](https://github.com/oh-my-dsh/dsh-plugin-upgrade-skill/). Download the current branch for this source update; existing releases retain their original version.
 
