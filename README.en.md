@@ -38,4 +38,4 @@ Current master ships complete native plugin folders and preserves each Settings 
 
 ## Source and license
 
-This repository is a one-way distribution mirror of [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh), not an independent development source. It is synchronized from [committed main source](https://github.com/niushuanan/xiaozhuang-dsh/commit/50818017c3c6f8e8bfa5a1b96a910fcdc98b0e17); the latest tagged release remains [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2). Licensed under the [MIT License](LICENSE).
+This repository is a one-way distribution mirror of [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh), not an independent development source. It is synchronized from [committed main source](https://github.com/niushuanan/xiaozhuang-dsh/commit/38fb2bde5b0e0dc1d9a2cb8560fefa9120825ce0); the latest tagged release remains [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2). Licensed under the [MIT License](LICENSE).

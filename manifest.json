@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "kind": "xiaozhuang-dsh-plugin-export",
-  "createdAt": "2026-10-16T06:53:18.192877+00:00",
-  "sourceCommit": "50818017c3c6f8e8bfa5a1b96a910fcdc98b0e17",
+  "createdAt": "2026-10-16T07:01:25.546103+00:00",
+  "sourceCommit": "38fb2bde5b0e0dc1d9a2cb8560fefa9120825ce0",
   "sourceRepository": "https://github.com/niushuanan/xiaozhuang-dsh",
   "repository": "https://github.com/niushuanan/dsh-token-overview",
   "targetHarness": "0.2.1-alpha.1",
@@ -75,7 +75,7 @@
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/report.html",
       "size": 124015,
-      "sha256": "8db5a6fce7d5ba30f6c9999b31f434d78193916259c4f226e7aba580af3b2fe6"
+      "sha256": "429b1eae0bf8256d7a3dfeeabe5a01853710f258c157c4e857c38bd338db8c62"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/token-overview-icon.png",

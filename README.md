@@ -38,4 +38,4 @@ Token 总览设置页复用产品统一标题层级；安装到尚未提供该�
 
 ## 来源与许可
 
-本仓库是 [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh) 的单向发布副本，不是独立开发源。当前内容同步自[主仓已提交源码](https://github.com/niushuanan/xiaozhuang-dsh/commit/50818017c3c6f8e8bfa5a1b96a910fcdc98b0e17)，最近正式发布版本仍为 [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2)。代码采用 [MIT License](LICENSE)。
+本仓库是 [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh) 的单向发布副本，不是独立开发源。当前内容同步自[主仓已提交源码](https://github.com/niushuanan/xiaozhuang-dsh/commit/38fb2bde5b0e0dc1d9a2cb8560fefa9120825ce0)，最近正式发布版本仍为 [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2)。代码采用 [MIT License](LICENSE)。
