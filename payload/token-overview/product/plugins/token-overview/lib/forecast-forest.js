@@ -7150,23 +7150,27 @@ function horizonFeatures(context, hour) {
 
 // plugins/token-overview/src/forecast-forest.js
 var ORIGINS = [0, 3, 6, 8, 9, 12, 15, 16, 18, 20, 21, 23];
-function fitHourlyForest(days, client, date) {
+var MAX_TRAIN_ROWS = 256;
+function fitHourlyForest(days, client, date, contextAt = (target, cut) => contextFor(days, client, target, cut)) {
   const complete = days.filter((day) => day.date < date && age(date, day.date) <= 56 && !day.estimated && day.complete[client]);
   const positive = complete.filter((day) => day.totals[client]?.tokens > 0);
   if (positive.length < 3) return null;
   const trainingDays = complete.filter((day) => day.date >= positive[0].date).slice(-28);
-  const x = [], y = [];
+  const targets = [];
   for (const day of trainingDays) {
     for (const cut of ORIGINS) {
-      const context = contextFor(days, client, day.date, cut);
+      const context = contextAt(day.date, cut);
       if (!context.past.some((before) => before.totals[client].tokens > 0)) continue;
       for (let hour = cut; hour < 24; hour++) {
-        x.push(horizonFeatures(context, hour));
-        y.push(day.hours[client][hour].tokens / context.scale);
+        targets.push({ context, hour, value: day.hours[client][hour].tokens / context.scale });
       }
     }
   }
-  if (!x.length) return null;
+  if (!targets.length) return null;
+  const size = Math.min(MAX_TRAIN_ROWS, targets.length);
+  const selected = Array.from({ length: size }, (_, index) => targets[Math.floor((index + 0.5) * targets.length / size)]);
+  const x = selected.map((row) => horizonFeatures(row.context, row.hour));
+  const y = selected.map((row) => row.value);
   const forest = new import_ml_random_forest.RandomForestRegression({
     nEstimators: 40,
     maxFeatures: 0.8,

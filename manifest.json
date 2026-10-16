@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "kind": "xiaozhuang-dsh-plugin-export",
-  "createdAt": "2026-10-16T05:33:07.850643+00:00",
-  "sourceCommit": "7e84c55a79bf97ba9c3a60f04fb05631e6c3ed6a",
+  "createdAt": "2026-10-16T06:17:02.794984+00:00",
+  "sourceCommit": "dc4cb300550163e892032773c8889cafd4c39d5f",
   "sourceRepository": "https://github.com/niushuanan/xiaozhuang-dsh",
   "repository": "https://github.com/niushuanan/dsh-token-overview",
   "targetHarness": "0.2.1-alpha.1",
@@ -23,7 +23,7 @@
           "path": "plugins/token-overview"
         }
       ],
-      "version": "1.4.0"
+      "version": "1.4.1"
     }
   ],
   "files": [
@@ -49,13 +49,13 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/FORECASTING.md",
-      "size": 9045,
-      "sha256": "253524076fe56d5bc93fa4c3f5f051451444108e9dbc4301c09f31847816e48a"
+      "size": 10324,
+      "sha256": "58b127518643805766d06763688dfbfafbb684cef23b64733a6e8b3e0047bd55"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/README.md",
-      "size": 5489,
-      "sha256": "0513e5b1ba8c4b7a6e4fdf0b5d2713fc747b9a58acdaf902d1b0fdb53a99fb1a"
+      "size": 5961,
+      "sha256": "be6cbf9b7086d7beaa860e622e7d03c3f24e99a4825088e6f9bd764d930583e8"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/THIRD_PARTY_NOTICES.md",
@@ -69,8 +69,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/forecast.js",
-      "size": 10113,
-      "sha256": "b28e0f27ccbc596d642dc42b730dd4f177d42000f42cf74fdb79fdd0407d8944"
+      "size": 10342,
+      "sha256": "0b0072afd51e9b0dc7789b32423706e8d8217d9416f7cbfe6a7f3702cf0e13fe"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/report.html",
@@ -94,8 +94,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/forecast-accuracy.js",
-      "size": 3037,
-      "sha256": "1d5e5371af476a2f56a5bcc3ec3847089de2aa65fe75aaa257820d94e895c78e"
+      "size": 3038,
+      "sha256": "bef2f060a58f9bb455712326bc8b94cc6f77d131abb074ef0474e9aa89bb52e5"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/forecast-context.js",
@@ -104,8 +104,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/forecast-forest.js",
-      "size": 246350,
-      "sha256": "715a5fb2c5aba786739e7280267ec40214097e336b067f9c3d816d39a9779b38"
+      "size": 246718,
+      "sha256": "1d7dd36edc059a00a06f9d3c84cec9f240854ad79c055874f34e494a553c7e15"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/forecast-history.js",
@@ -114,8 +114,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/forecast-service.js",
-      "size": 1686,
-      "sha256": "17624d4c64b3d0d4a47a7561d1e7df2478308b8a42015c417051ad75e97200f5"
+      "size": 2295,
+      "sha256": "15761c4aba14ab8b74b3db35ed8f3c89fff9caf11cfde9b6a03d7b08defb6a08"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/forecast-worker.js",
@@ -124,8 +124,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/forecast.js",
-      "size": 15064,
-      "sha256": "acf2f725a8a2d00ebaaf8472f399efd5467c02fb07ab1115312db384b4e01861"
+      "size": 15784,
+      "sha256": "d2251d5bed738afbb044d14edcb71cb52f316e3f6761ab4512f074cbcc88224d"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/hourly-pricing.js",
@@ -134,8 +134,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/index.js",
-      "size": 38057,
-      "sha256": "8dacc094c45beb3d6404c4b0ce51a2c347a1707cedb3929dd82675c0858e0343"
+      "size": 38503,
+      "sha256": "c80689843ac7b7e9a332a2ecb8cda753921134cf157a8a446408c0d81f2cb1e8"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/journey.js",
@@ -145,7 +145,7 @@
     {
       "path": "payload/token-overview/product/plugins/token-overview/package.json",
       "size": 755,
-      "sha256": "76ef8a602abf9ef440922d6d98aee4c349019fbab0f17b97fe431c6927b1dc22"
+      "sha256": "b4525c93bcdb03053dbb401c3b36502acc1788475eac16d458498a301f9b9b64"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/scripts/backtest.mjs",
@@ -164,8 +164,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/forecast-accuracy.js",
-      "size": 3037,
-      "sha256": "1d5e5371af476a2f56a5bcc3ec3847089de2aa65fe75aaa257820d94e895c78e"
+      "size": 3038,
+      "sha256": "bef2f060a58f9bb455712326bc8b94cc6f77d131abb074ef0474e9aa89bb52e5"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/forecast-context.js",
@@ -174,8 +174,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/forecast-forest.js",
-      "size": 2146,
-      "sha256": "a2cbaf43dc39079abc4a5761bc4a24ebee5b97df910734201c5c668083e6872c"
+      "size": 2702,
+      "sha256": "1beb769de7bd1e47dd24cd474621bcfaa806225d0f25f662a807d7a402cb094f"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/forecast-history.js",
@@ -184,8 +184,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/forecast-service.js",
-      "size": 1686,
-      "sha256": "17624d4c64b3d0d4a47a7561d1e7df2478308b8a42015c417051ad75e97200f5"
+      "size": 2295,
+      "sha256": "15761c4aba14ab8b74b3db35ed8f3c89fff9caf11cfde9b6a03d7b08defb6a08"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/forecast-worker.js",
@@ -194,8 +194,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/forecast.js",
-      "size": 15064,
-      "sha256": "acf2f725a8a2d00ebaaf8472f399efd5467c02fb07ab1115312db384b4e01861"
+      "size": 15784,
+      "sha256": "d2251d5bed738afbb044d14edcb71cb52f316e3f6761ab4512f074cbcc88224d"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/hourly-pricing.js",
@@ -204,8 +204,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/index.js",
-      "size": 38057,
-      "sha256": "8dacc094c45beb3d6404c4b0ce51a2c347a1707cedb3929dd82675c0858e0343"
+      "size": 38503,
+      "sha256": "c80689843ac7b7e9a332a2ecb8cda753921134cf157a8a446408c0d81f2cb1e8"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/journey.js",

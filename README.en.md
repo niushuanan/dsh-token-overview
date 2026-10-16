@@ -1,6 +1,6 @@
 # dsh-token-overview
 
-Version **1.4.0** adds cumulative milestones with crossing dates, calendar/active days, equal-volume stage durations, daily peaks and usage streaks. A compact timeline focuses milestone points and shows remaining progress. Date filters crop lifetime totals instead of resetting them; Settings adds one small history link and estimated crossings remain marked approximate.
+**1.4.1** fixes forecasts stuck on an earlier hour by bounding forest training rows, reusing past feature contexts and enforcing a calculation deadline. Completed usage reports can publish independently of prediction failure. Hourly tooltips show their interval, and the footer keeps the real observation cutoff while distinguishing updating from delayed snapshots. Cumulative milestones and usage history from 1.4.0 remain available.
 
 Current master targets Harness **0.2.1-alpha.1** and includes the native plugin upgrade made with [dsh-plugin-upgrade-skill](https://github.com/oh-my-dsh/dsh-plugin-upgrade-skill/). Download the current branch for this source update; existing releases retain their original version.
 
