@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "kind": "xiaozhuang-dsh-plugin-export",
-  "createdAt": "2026-10-16T07:01:25.546103+00:00",
-  "sourceCommit": "38fb2bde5b0e0dc1d9a2cb8560fefa9120825ce0",
+  "createdAt": "2026-10-20T12:14:56.666061+00:00",
+  "sourceCommit": "edb928abaceb346eb73968fbbea29848c89aba14",
   "sourceRepository": "https://github.com/niushuanan/xiaozhuang-dsh",
   "repository": "https://github.com/niushuanan/dsh-token-overview",
   "targetHarness": "0.2.1-alpha.1",
@@ -23,7 +23,7 @@
           "path": "plugins/token-overview"
         }
       ],
-      "version": "1.4.4"
+      "version": "1.5.0"
     }
   ],
   "files": [
@@ -54,8 +54,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/README.md",
-      "size": 7025,
-      "sha256": "73df2930e5a9fa9edc301b2141c6f8fd903a116ee053d582b39ddc91d923896a"
+      "size": 7893,
+      "sha256": "915b66e00503958652481f56533b85e81b3520957eca35551b241567a9c338e4"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/THIRD_PARTY_NOTICES.md",
@@ -74,8 +74,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/report.html",
-      "size": 124015,
-      "sha256": "429b1eae0bf8256d7a3dfeeabe5a01853710f258c157c4e857c38bd338db8c62"
+      "size": 132430,
+      "sha256": "bbdedf535717cfb27a83d37e66da0fde3c361830424cfe0c95bc2cbe07e74261"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/token-overview-icon.png",
@@ -134,8 +134,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/index.js",
-      "size": 39662,
-      "sha256": "5609150f21384b7aab0da5cde2b08647670654173110cd82ada34f58f0455edb"
+      "size": 39903,
+      "sha256": "e1ab0085478f5f6b17d33cdf64e7f7825390a65dadaa3ff8d8d9602d5a28fd56"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/lib/journey.js",
@@ -143,9 +143,14 @@
       "sha256": "de4368c64840d39a7efb96cbe5be77cd6202028eda53afb0b350a25ae9f64576"
     },
     {
+      "path": "payload/token-overview/product/plugins/token-overview/lib/model-data.js",
+      "size": 3632,
+      "sha256": "7d7a16e27874d03b7c6de2c5d251fc3e6c9845fee54e9b7498ef8394189c275e"
+    },
+    {
       "path": "payload/token-overview/product/plugins/token-overview/package.json",
       "size": 755,
-      "sha256": "262a88de05079e70ca00c59be2e7a28c33ebaa8f491fdcaa6147e854b92f9eda"
+      "sha256": "0af02218568485f720fd05855fa5e51f3a9f205b7e628635c8e17387801ba0d8"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/scripts/backtest.mjs",
@@ -154,8 +159,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/scripts/build.mjs",
-      "size": 1359,
-      "sha256": "2f3e3a9263046a1337eba3ebab1ec2b029aacfb35889bfdd5fe681269cdedd61"
+      "size": 1835,
+      "sha256": "942b94860b9fc561b789a17aab158e829d4c16a8eb4be11002e580220adf50af"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/client.js",
@@ -204,13 +209,48 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/index.js",
-      "size": 39662,
-      "sha256": "5609150f21384b7aab0da5cde2b08647670654173110cd82ada34f58f0455edb"
+      "size": 39903,
+      "sha256": "e1ab0085478f5f6b17d33cdf64e7f7825390a65dadaa3ff8d8d9602d5a28fd56"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/journey.js",
       "size": 4284,
       "sha256": "de4368c64840d39a7efb96cbe5be77cd6202028eda53afb0b350a25ae9f64576"
+    },
+    {
+      "path": "payload/token-overview/product/plugins/token-overview/src/model-data.js",
+      "size": 3632,
+      "sha256": "7d7a16e27874d03b7c6de2c5d251fc3e6c9845fee54e9b7498ef8394189c275e"
+    },
+    {
+      "path": "payload/token-overview/product/plugins/token-overview/test/client-contract.test.mjs",
+      "size": 4091,
+      "sha256": "4d4398281973daa0730e6d5b9e3ea34838963748b60773fd9452a43f751f6984"
+    },
+    {
+      "path": "payload/token-overview/product/plugins/token-overview/test/collector.test.mjs",
+      "size": 2819,
+      "sha256": "33f23040ce79fb7cecf976cd313b7b1235a0925a33c3da67f5cd90a58a803e71"
+    },
+    {
+      "path": "payload/token-overview/product/plugins/token-overview/test/forecast.test.mjs",
+      "size": 7917,
+      "sha256": "f7ca7ff655c5fd7e83e90c53c9e76b2d915ae8a6f8adf6fdd149385a7bcc9692"
+    },
+    {
+      "path": "payload/token-overview/product/plugins/token-overview/test/host.test.mjs",
+      "size": 10408,
+      "sha256": "18d13aab74ce84134cb13e74a6f0a017a1db238b5bb6250f9b0b855fc9e9af6f"
+    },
+    {
+      "path": "payload/token-overview/product/plugins/token-overview/test/model-data.test.mjs",
+      "size": 2501,
+      "sha256": "be6d6420e7693dd16b5a676bd61b995dced6bbb30ac94b81df0c611ea58dc663"
+    },
+    {
+      "path": "payload/token-overview/product/plugins/token-overview/test/report.test.mjs",
+      "size": 4444,
+      "sha256": "5a595ecf6ef81a472b0627602d8e4e937bd3a99b7ed302a44888d330c19c0d7a"
     }
   ],
   "compatibilityPatches": [
