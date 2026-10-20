@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "kind": "xiaozhuang-dsh-plugin-export",
-  "createdAt": "2026-10-20T12:14:56.666061+00:00",
-  "sourceCommit": "edb928abaceb346eb73968fbbea29848c89aba14",
+  "createdAt": "2026-10-20T12:24:09.297190+00:00",
+  "sourceCommit": "eec85b921f3c09d00b842080b8929bde2bbec78a",
   "sourceRepository": "https://github.com/niushuanan/xiaozhuang-dsh",
   "repository": "https://github.com/niushuanan/dsh-token-overview",
   "targetHarness": "0.2.1-alpha.1",
@@ -23,7 +23,7 @@
           "path": "plugins/token-overview"
         }
       ],
-      "version": "1.5.0"
+      "version": "1.5.1"
     }
   ],
   "files": [
@@ -54,8 +54,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/README.md",
-      "size": 7893,
-      "sha256": "915b66e00503958652481f56533b85e81b3520957eca35551b241567a9c338e4"
+      "size": 8121,
+      "sha256": "a96ee88fe4b57b2f18b82c60d9914679c83e19993b9141d9126a9b576c5357cc"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/THIRD_PARTY_NOTICES.md",
@@ -74,8 +74,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/report.html",
-      "size": 132430,
-      "sha256": "bbdedf535717cfb27a83d37e66da0fde3c361830424cfe0c95bc2cbe07e74261"
+      "size": 142019,
+      "sha256": "02a113ff0ec642add65279a587fc7db0c9b75c51ccd3da05e802b875046bfcde"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/token-overview-icon.png",
@@ -150,7 +150,7 @@
     {
       "path": "payload/token-overview/product/plugins/token-overview/package.json",
       "size": 755,
-      "sha256": "0af02218568485f720fd05855fa5e51f3a9f205b7e628635c8e17387801ba0d8"
+      "sha256": "8348feaa2df8b505bf79443883729fd41a42a9907944e5224a7c5afe51635dbb"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/scripts/backtest.mjs",

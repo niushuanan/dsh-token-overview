@@ -1,6 +1,6 @@
 # dsh-token-overview
 
-**1.5.0** combines equivalent model names across clients and normalizes case, spaces, underscores and known provider prefixes. Search, vendor and model selectors update historical metrics, charts and daily/monthly detail. Versions, Flash/Pro variants, contributing clients and recorded tokens/costs are preserved. Today’s forecast and hourly rhythm retain their platform scope.
+**1.5.1** replaces the oversized filter form with a compact toolbar, neutral vendor/model menus, selection marks, vendor colors and model counts. The model menu supports search and keyboard selection; Escape or outside clicks dismiss it. Model normalization and filtering calculations are preserved.
 
 Current master targets Harness **0.2.1-alpha.1** and includes the native plugin upgrade made with [dsh-plugin-upgrade-skill](https://github.com/oh-my-dsh/dsh-plugin-upgrade-skill/). Download the current branch for this source update; existing releases retain their original version.
 
@@ -38,4 +38,4 @@ Current master ships complete native plugin folders and preserves each Settings 
 
 ## Source and license
 
-This repository is a one-way distribution mirror of [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh), not an independent development source. It is synchronized from [committed main source](https://github.com/niushuanan/xiaozhuang-dsh/commit/edb928abaceb346eb73968fbbea29848c89aba14); the latest tagged release remains [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2). Licensed under the [MIT License](LICENSE).
+This repository is a one-way distribution mirror of [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh), not an independent development source. It is synchronized from [committed main source](https://github.com/niushuanan/xiaozhuang-dsh/commit/eec85b921f3c09d00b842080b8929bde2bbec78a); the latest tagged release remains [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2). Licensed under the [MIT License](LICENSE).

@@ -1,6 +1,6 @@
 # dsh-token-overview
 
-**1.5.0** 合并跨平台同名模型，统一大小写、空格、下划线和明确的厂商前缀。报告新增模型搜索、厂商和单模型筛选，历史指标、图表和日月明细联动；保留不同版本、Flash／Pro、来源平台及原始 Token 和已记录费用。今日预测与时段节律仍按平台展示。
+**1.5.1** 将模型筛选重做为紧凑工具栏：短搜索框、厂商和模型浮层菜单、选中标记、厂商颜色与模型数量。模型菜单支持内部搜索、方向键和回车选择，Esc 或点击外部收起；保留归一化及所有筛选计算。
 
 当前 master 面向 Harness **0.2.1-alpha.1**，已使用 [dsh-plugin-upgrade-skill](https://github.com/oh-my-dsh/dsh-plugin-upgrade-skill/) 完成原生插件适配。下载当前分支获得本次源码更新；既有 Release 保持各自原版本。
 
@@ -38,4 +38,4 @@ Token 总览设置页复用产品统一标题层级；安装到尚未提供该�
 
 ## 来源与许可
 
-本仓库是 [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh) 的单向发布副本，不是独立开发源。当前内容同步自[主仓已提交源码](https://github.com/niushuanan/xiaozhuang-dsh/commit/edb928abaceb346eb73968fbbea29848c89aba14)，最近正式发布版本仍为 [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2)。代码采用 [MIT License](LICENSE)。
+本仓库是 [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh) 的单向发布副本，不是独立开发源。当前内容同步自[主仓已提交源码](https://github.com/niushuanan/xiaozhuang-dsh/commit/eec85b921f3c09d00b842080b8929bde2bbec78a)，最近正式发布版本仍为 [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-token-overview/releases/tag/xiaozhuang-v0.4.2)。代码采用 [MIT License](LICENSE)。
