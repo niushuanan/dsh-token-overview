@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "kind": "xiaozhuang-dsh-plugin-export",
-  "createdAt": "2026-10-20T12:24:09.297190+00:00",
-  "sourceCommit": "eec85b921f3c09d00b842080b8929bde2bbec78a",
+  "createdAt": "2026-10-21T05:41:23.315052+00:00",
+  "sourceCommit": "5bcf7fdee1e0309c6fa6d2f43d512418e996b9ae",
   "sourceRepository": "https://github.com/niushuanan/xiaozhuang-dsh",
   "repository": "https://github.com/niushuanan/dsh-token-overview",
   "targetHarness": "0.2.1-alpha.1",
@@ -23,7 +23,7 @@
           "path": "plugins/token-overview"
         }
       ],
-      "version": "1.5.1"
+      "version": "1.6.0"
     }
   ],
   "files": [
@@ -53,9 +53,14 @@
       "sha256": "405b7e123f8977b4c36ad62805787a4a09067f6d16400847c9cd0198e5baffa1"
     },
     {
+      "path": "payload/token-overview/product/plugins/token-overview/GROWTH_FORECASTING.md",
+      "size": 4446,
+      "sha256": "1e8510ef648ba73781c5d1f2528cf64e1d6350a6462ec32e83a3342311c4c055"
+    },
+    {
       "path": "payload/token-overview/product/plugins/token-overview/README.md",
-      "size": 8121,
-      "sha256": "a96ee88fe4b57b2f18b82c60d9914679c83e19993b9141d9126a9b576c5357cc"
+      "size": 9137,
+      "sha256": "8fc1b028421cd4393a3800d5d4861781ef944a3ebe7dc7de397fa0e2ab68c850"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/THIRD_PARTY_NOTICES.md",
@@ -74,8 +79,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/report.html",
-      "size": 142019,
-      "sha256": "02a113ff0ec642add65279a587fc7db0c9b75c51ccd3da05e802b875046bfcde"
+      "size": 159653,
+      "sha256": "4e51518b10e8005300ee2f3535545105cb0645c1663117cf30c29fd56b2eb348"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/assets/token-overview-icon.png",
@@ -128,6 +133,11 @@
       "sha256": "d2251d5bed738afbb044d14edcb71cb52f316e3f6761ab4512f074cbcc88224d"
     },
     {
+      "path": "payload/token-overview/product/plugins/token-overview/lib/growth-forecast.js",
+      "size": 10572,
+      "sha256": "eaa69e4902e0d4ce1902272f4e6ab64c1f5ceff45f91d134a19624de4057adae"
+    },
+    {
       "path": "payload/token-overview/product/plugins/token-overview/lib/hourly-pricing.js",
       "size": 2409,
       "sha256": "be2104c5c0429dc1379b8a1e380050e1c91e01326dd1707be6c025effda3b9bb"
@@ -150,7 +160,7 @@
     {
       "path": "payload/token-overview/product/plugins/token-overview/package.json",
       "size": 755,
-      "sha256": "8348feaa2df8b505bf79443883729fd41a42a9907944e5224a7c5afe51635dbb"
+      "sha256": "4d9c274f8f7e7b41951aa45622f65f2ad44eabf826f92f83f5ecd6885205e9ff"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/scripts/backtest.mjs",
@@ -159,8 +169,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/scripts/build.mjs",
-      "size": 1835,
-      "sha256": "942b94860b9fc561b789a17aab158e829d4c16a8eb4be11002e580220adf50af"
+      "size": 2336,
+      "sha256": "3bc7a339fd04147c7e03000f476770366040b1fe7457cd61a8271fa568161099"
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/src/client.js",
@@ -203,6 +213,11 @@
       "sha256": "d2251d5bed738afbb044d14edcb71cb52f316e3f6761ab4512f074cbcc88224d"
     },
     {
+      "path": "payload/token-overview/product/plugins/token-overview/src/growth-forecast.js",
+      "size": 10572,
+      "sha256": "eaa69e4902e0d4ce1902272f4e6ab64c1f5ceff45f91d134a19624de4057adae"
+    },
+    {
       "path": "payload/token-overview/product/plugins/token-overview/src/hourly-pricing.js",
       "size": 2409,
       "sha256": "be2104c5c0429dc1379b8a1e380050e1c91e01326dd1707be6c025effda3b9bb"
@@ -223,6 +238,21 @@
       "sha256": "7d7a16e27874d03b7c6de2c5d251fc3e6c9845fee54e9b7498ef8394189c275e"
     },
     {
+      "path": "payload/token-overview/product/plugins/token-overview/support/README.md",
+      "size": 1315,
+      "sha256": "d18cae2915efa31f8a5cfaf5c92ffd4c33a673492c905a02e907d10710d0c92f"
+    },
+    {
+      "path": "payload/token-overview/product/plugins/token-overview/support/openai-pricing-columns.patch",
+      "size": 4191,
+      "sha256": "0e8e9600791b401217d15534247b83056fb71c9dd8e47c99b3e2da1be36cbfe6"
+    },
+    {
+      "path": "payload/token-overview/product/plugins/token-overview/support/test_pricing_columns.py",
+      "size": 1439,
+      "sha256": "10f1230998a8ef7282f1370c61352dbb61f3d1f2dbc7acfa77e989c200e90299"
+    },
+    {
       "path": "payload/token-overview/product/plugins/token-overview/test/client-contract.test.mjs",
       "size": 4091,
       "sha256": "4d4398281973daa0730e6d5b9e3ea34838963748b60773fd9452a43f751f6984"
@@ -238,6 +268,11 @@
       "sha256": "f7ca7ff655c5fd7e83e90c53c9e76b2d915ae8a6f8adf6fdd149385a7bcc9692"
     },
     {
+      "path": "payload/token-overview/product/plugins/token-overview/test/growth-forecast.test.mjs",
+      "size": 2363,
+      "sha256": "749fe24cd97e62a01f91c16f053c72be53a1181fd025b2b0adab9dddd156e739"
+    },
+    {
       "path": "payload/token-overview/product/plugins/token-overview/test/host.test.mjs",
       "size": 10408,
       "sha256": "18d13aab74ce84134cb13e74a6f0a017a1db238b5bb6250f9b0b855fc9e9af6f"
@@ -249,8 +284,8 @@
     },
     {
       "path": "payload/token-overview/product/plugins/token-overview/test/report.test.mjs",
-      "size": 4444,
-      "sha256": "5a595ecf6ef81a472b0627602d8e4e937bd3a99b7ed302a44888d330c19c0d7a"
+      "size": 5789,
+      "sha256": "54f6c94e713c58126e1f391352009fa2038c7949144986c12947a322ff16968a"
     }
   ],
   "compatibilityPatches": [

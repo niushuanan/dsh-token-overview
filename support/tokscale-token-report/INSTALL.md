@@ -15,3 +15,5 @@ Original logs and global pricing settings are not rewritten.
 No machine reports, recovered history, history locks, credentials, or pricing
 caches belong in this distribution. This declaration replaces the obsolete
 embedded Skill copy; it does not remove any Skill installed on the user's machine.
+
+OpenAI pricing table repair: run the [column verifier](../../payload/token-overview/product/plugins/token-overview/support/test_pricing_columns.py) against the canonical Skill. If it reports the old fixed-position parser, follow the [targeted patch instructions](../../payload/token-overview/product/plugins/token-overview/support/README.md), then run the normal collection to reprice existing quantities. Do not add a second Skill copy or rewrite usage history.
